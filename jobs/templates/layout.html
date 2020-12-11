@@ -3,15 +3,9 @@
 <html>
   <head>
     <title>Job Board</title>
-    <link rel="stylesheet">
-        <a href="{{ url_for('/static/css/bluma.min.css')}}"> link1</a>
-    </link>
-    <link rel="stylesheet">
-        <a href="{{ url_for('/static/css/app.css')}}">link2</a>
-    </link>
-    <link rel="stylesheet">
-        <a href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">link3</a>
-    </link>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bulma.min.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/app.css')}}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
   </head>
   <body>
     <div class="container top">
