@@ -62,7 +62,7 @@ def review(employer_id):
     if request.method == 'POST':
         review = request.form['review']
         rating = request.form['rating']
-        rating = request.form['title']
+        title = request.form['title']
         status = request.form['status']
 
         date = datetime.datetime.now().strftime("%m/%d/%Y")
