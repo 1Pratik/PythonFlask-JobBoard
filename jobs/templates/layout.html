@@ -1,0 +1,24 @@
+<!-- templates/layout.html -->
+<!doctype html>
+<html>
+  <head>
+    <title>Job Board</title>
+    <link rel="stylesheet">
+        <a href="{{ url_for('/static/css/bluma.min.css')}}"> link1</a>
+    </link>
+    <link rel="stylesheet">
+        <a href="{{ url_for('/static/css/app.css')}}">link2</a>
+    </link>
+    <link rel="stylesheet">
+        <a href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">link3</a>
+    </link>
+  </head>
+  <body>
+    <div class="container top">
+      <div class="content">
+        {% block content %}
+        {% endblock %}
+      </div>
+    </div>
+  </body>
+</html>
